@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7a302d92d6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/joy-logo.png" class="logo" alt="" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p><b>Frontend Developer</b></p>
+          <h1>
+            Hi, I'm
+            <span
+              >Joyce<br />
+              Rashel Saldanha</span
+            >
+          </h1>
+          <div class="languages">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-angular"></i>
+            <i class="fa-brands fa-react"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----about------ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/joyce.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello! I'm <b><i> Joyce Rashel Saldanha</i></b
+              >, a frontend developer with 2 years of experience passionate
+              about creating captivating and user-friendly web experiences. I
+              have a strong foundation in HTML, CSS, and JavaScript, along with
+              expertise in frameworks like React.js and Angular. In my previous
+              roles, I've collaborated on a variety of projects, delivering
+              responsive and visually appealing interfaces. I hold a Master
+              degree in Computer Application and continually seek opportunities
+              for professional growth through courses and certifications.
+              Explore my portfolio to see examples of my work and feel free to
+              reach out—I'd love to connect!
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Frontend Development</span><br />HTML, CSS, Bootstrap,
+                  JavaScript, TypeScript
+                </li>
+                <li>
+                  <span>Framework/Libraries</span><br />Angular, AngularJs,
+                  ReactJs
+                </li>
+                <li><span>Unit testing</span><br />Karma, Jasmine</li>
+                <li><span>Database</span><br />SQL</li>
+                <li><span>Version control</span><br />GIT</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>December 2023 - January 2024</span><br />Software
+                  Engineer
+                </li>
+                <li>
+                  <span>September 2012 - November 2023</span><br />Associate
+                  Software Engineer
+                </li>
+                <li><span>February 2022 - August 2022</span><br />Intern</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020 - 2022</span><br />Master of Computer
+                  Application<br />CGPA- 8.78
+                </li>
+                <li>
+                  <span>2017 - 2020</span><br />Bachelor of Computer
+                  Application<br />Percentage- 84%
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------=services------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              As a web designer, I specialize in creating visually appealing and
+              user-friendly websites. I'm skilled in various aspects of web
+              design, including user experience (UX) and user interface (UI)
+              design, responsive design, accessibility, typography, color
+              theory, and graphic design. I focus on optimizing website
+              performance and incorporating engaging animations and
+              interactivity to enhance the user experience. With a keen eye for
+              design and a passion for staying updated with the latest trends
+              and technologies, I strive to create compelling and effective
+              websites that meet the needs of clients and users alike.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              As a UI/UX designer, I specialize in crafting intuitive and
+              visually appealing digital experiences. My expertise lies in
+              understanding user needs and behaviors to create seamless
+              interactions and interfaces. I'm skilled in user interface (UI)
+              design, focusing on layout, typography, color theory, and graphic
+              design to create aesthetically pleasing and engaging interfaces.
+              Additionally, I excel in user experience (UX) design, conducting
+              research, creating wireframes and prototypes, and conducting
+              usability testing to ensure a positive user experience. With a
+              passion for design and a commitment to staying updated with the
+              latest trends and best practices, I strive to create compelling
+              and user-centric designs that elevate the overall digital
+              experience for users.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App Design</h2>
+            <p>
+              As an app designer, I specialize in crafting engaging and
+              intuitive mobile experiences. My expertise lies in understanding
+              user needs and behaviors to create seamless interactions and
+              interfaces tailored specifically for mobile platforms. I excel in
+              user interface (UI) design, focusing on layout, typography, color
+              theory, and graphic design to create visually stunning and
+              user-friendly interfaces. Additionally, I have a strong foundation
+              in user experience (UX) design, conducting research, creating
+              wireframes and prototypes, and conducting usability testing to
+              ensure optimal usability and user satisfaction. With a passion for
+              mobile design and a dedication to staying updated with the latest
+              trends and technologies, I strive to create compelling and
+              impactful app designs that enhance the overall mobile experience
+              for users.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------portfolio--------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/weather.png" alt="" />
+            <div class="layer">
+              <h3>Weather App</h3>
+              <p>
+                The app is weather forecast prediction based on current
+                location. Technology used is React.
+              </p>
+              <a href="https://github.com/JoyceSaldanha/Weather-app/tree/master"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/travel.png" alt="" />
+            <div class="layer">
+              <h3>Travel Management System App</h3>
+              <p>
+                The app allows you to book your itenary. Technology used is
+                Java.
+              </p>
+              <a
+                href="https://github.com/JoyceSaldanha/Travel-Management-System"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/dashboard.png" alt="" />
+            <div class="layer">
+              <h3>Dashboard Application</h3>
+              <p>
+                The app is a mini dashboard which has navigation to different
+                screens. Technology used is React.
+              </p>
+              <a href="https://github.com/JoyceSaldanha/Dashboard"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/JoyceSaldanha/" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- ---------contact------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+              joyce.saldanha1999@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i> +91- 7259104608</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/rasheljoyce.saldanha"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://github.com/JoyceSaldanha/"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.instagram.com/__joyce_rashel__/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/joyce-rashel-saldanha-78187a21b/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a
+              href="images/Joyce Rashel Saldanha-FrontendDeveloper.pdf"
+              download
+              class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Joyce Rashel Saldanha <i class="fa-solid fa-heart"></i>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxd3_r4vzl5kIs1zjZafq0ak-L1K0Zbnv0nqTDhjtrQGm2nMDrHLwyBiLUM3M51yGNX9Q/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent successfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
